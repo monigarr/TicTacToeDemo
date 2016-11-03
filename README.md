@@ -57,5 +57,5 @@ CocoaPods are used in this project.
 - Cleaner & more readable the code is, the better.
 
 # Inspiration #
--This project is inspired by Keith Elliott's Swift Programming Tutorial: 
+This project is inspired by Keith Elliott's Swift Programming Tutorial: 
 https://medium.com/swift-programming/build-tic-tac-toe-with-ai-using-swift-25c5cd3085c9#.7hpiwicnk
