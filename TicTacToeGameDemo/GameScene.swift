@@ -23,16 +23,15 @@ class GameScene: SKScene {
     var stateMachine: GKStateMachine!
     var gameLogic: GKMinmaxStrategist!
     var node: SKSpriteNode!
-    var firstPlayerChoice: String!
-    var secondPlayerChoice: String!
     var player1Label: SKNode!
     var player2Label: SKNode!
-    var twitterLabel: SKNode!
     
     //defaults
+    var firstPlayerChoice: String! = "x"
+    var secondPlayerChoice: String! = "o"
     var cross = SKSpriteNode(imageNamed: "x-mark")
     var circle = SKSpriteNode(imageNamed: "o-mark")
-
+    
     func buttonXTapped(){
         firstPlayerX()
         secondPlayerO()

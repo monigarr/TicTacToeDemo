@@ -17,7 +17,6 @@ class StartGameState: GKState{
     var scene: GameScene?
     var winnerLabel: SKNode!
     
-    var twitterNode: SKNode!
     var clearNode: SKNode!
     var boardNode: SKNode!
     
@@ -50,9 +49,6 @@ class StartGameState: GKState{
         
         winnerLabel = self.scene?.childNode(withName: "winnerLabel")
         winnerLabel.isHidden = true
-        
-        twitterNode = self.scene?.childNode(withName: "twitter")
-        twitterNode.isHidden = true
         
         clearNode = self.scene?.childNode(withName: "clear")
         clearNode.isHidden = true
@@ -120,31 +116,12 @@ class ActiveGameState: GKState{
         }
     }
     
-    // Bonus Social Sharing
-    // Add Button to Winner Alert
-    // Tap Button to brag about amazing gamer skills
-    //  all over social media town
-    //  send to Activity Controller on iOS
-    //  respond to NSNotification on ViewController
-    func humanMustBrag(){
-        //openTwitter()
-    }
-    
     // Bonus Animation / Transitions
     //  fade in / fade out or other animations to gameplay or view transitions
-    //      use Monica Creativity Magic
     func bonusAnimation(){
         
     }
 
-    // Bonus Integrate Ads
-    // Firebase Integration because iAd is gone
-    //  add banner to one of the screens with
-    //      iAds - framework included in bae iOS SDK
-    //      enable test mode if available
-    // https://developer.apple.com/iad/ 
-    // iAd App Network is no longer available as of July 1 2016
-    
     // Bonus Game State
     //  persist & resume game state during app and/or view lifecycle events
     // to allow gameplay to resume properly

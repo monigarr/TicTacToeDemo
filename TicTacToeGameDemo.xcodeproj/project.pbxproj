@@ -18,6 +18,8 @@
 		E052AD441DC923F300841760 /* GameStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E052AD431DC923F300841760 /* GameStates.swift */; };
 		E052AD451DC92B8200841760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E052AD341DC91F4900841760 /* Assets.xcassets */; };
 		E0AD4D1F1DCAA7970054F47C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0AD4D1E1DCAA7970054F47C /* GoogleService-Info.plist */; };
+		E0AD4D211DCABF9F0054F47C /* PlayerChoiceScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD4D201DCABF9F0054F47C /* PlayerChoiceScene.swift */; };
+		E0AD4D231DCAC01E0054F47C /* PlayerChoiceScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0AD4D221DCAC01E0054F47C /* PlayerChoiceScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		E052AD411DC923D900841760 /* GameAILogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAILogic.swift; sourceTree = "<group>"; };
 		E052AD431DC923F300841760 /* GameStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStates.swift; sourceTree = "<group>"; };
 		E0AD4D1E1DCAA7970054F47C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E0AD4D201DCABF9F0054F47C /* PlayerChoiceScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerChoiceScene.swift; sourceTree = "<group>"; };
+		E0AD4D221DCAC01E0054F47C /* PlayerChoiceScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerChoiceScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +93,13 @@
 			isa = PBXGroup;
 			children = (
 				E052AD291DC91F4900841760 /* GameScene.sks */,
+				E0AD4D221DCAC01E0054F47C /* PlayerChoiceScene.sks */,
 				E052AD271DC91F4900841760 /* AppDelegate.swift */,
+				E052AD431DC923F300841760 /* GameStates.swift */,
+				E052AD411DC923D900841760 /* GameAILogic.swift */,
 				E052AD2F1DC91F4900841760 /* GameViewController.swift */,
 				E052AD2D1DC91F4900841760 /* GameScene.swift */,
-				E052AD411DC923D900841760 /* GameAILogic.swift */,
-				E052AD431DC923F300841760 /* GameStates.swift */,
+				E0AD4D201DCABF9F0054F47C /* PlayerChoiceScene.swift */,
 				E052AD361DC91F4900841760 /* LaunchScreen.storyboard */,
 				E052AD311DC91F4900841760 /* Main.storyboard */,
 				E052AD341DC91F4900841760 /* Assets.xcassets */,
@@ -166,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0AD4D231DCAC01E0054F47C /* PlayerChoiceScene.sks in Resources */,
 				E052AD451DC92B8200841760 /* Assets.xcassets in Resources */,
 				E052AD331DC91F4900841760 /* Main.storyboard in Resources */,
 				E0AD4D1F1DCAA7970054F47C /* GoogleService-Info.plist in Resources */,
@@ -233,6 +240,7 @@
 				E052AD301DC91F4900841760 /* GameViewController.swift in Sources */,
 				E052AD441DC923F300841760 /* GameStates.swift in Sources */,
 				E052AD421DC923D900841760 /* GameAILogic.swift in Sources */,
+				E0AD4D211DCABF9F0054F47C /* PlayerChoiceScene.swift in Sources */,
 				E052AD281DC91F4900841760 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
