@@ -22,6 +22,7 @@
 		E0AD4D231DCAC01E0054F47C /* PlayerChoiceScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0AD4D221DCAC01E0054F47C /* PlayerChoiceScene.sks */; };
 		E0AD4D2B1DCACF030054F47C /* TicTacToeGameDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD4D2A1DCACF030054F47C /* TicTacToeGameDemoTests.swift */; };
 		E0AD4D391DCACF730054F47C /* TicTacToeGameDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD4D381DCACF730054F47C /* TicTacToeGameDemoUITests.swift */; };
+		E0AD4D471DCAD33B0054F47C /* GameViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD4D461DCAD33B0054F47C /* GameViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		E0AD4D361DCACF730054F47C /* TicTacToeGameDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeGameDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AD4D381DCACF730054F47C /* TicTacToeGameDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeGameDemoUITests.swift; sourceTree = "<group>"; };
 		E0AD4D3A1DCACF730054F47C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0AD4D461DCAD33B0054F47C /* GameViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,16 +137,12 @@
 		E052AD261DC91F4900841760 /* TicTacToeGameDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E052AD291DC91F4900841760 /* GameScene.sks */,
-				E0AD4D221DCAC01E0054F47C /* PlayerChoiceScene.sks */,
+				E0AD4D451DCAD0870054F47C /* GameLogic */,
+				E0AD4D441DCAD0640054F47C /* GameScenes */,
+				E0AD4D431DCAD0520054F47C /* ViewControllers */,
+				E0AD4D421DCAD0200054F47C /* Sks */,
+				E0AD4D401DCACFE40054F47C /* Storyboards */,
 				E052AD271DC91F4900841760 /* AppDelegate.swift */,
-				E052AD431DC923F300841760 /* GameStates.swift */,
-				E052AD411DC923D900841760 /* GameAILogic.swift */,
-				E052AD2F1DC91F4900841760 /* GameViewController.swift */,
-				E052AD2D1DC91F4900841760 /* GameScene.swift */,
-				E0AD4D201DCABF9F0054F47C /* PlayerChoiceScene.swift */,
-				E052AD361DC91F4900841760 /* LaunchScreen.storyboard */,
-				E052AD311DC91F4900841760 /* Main.storyboard */,
 				E052AD341DC91F4900841760 /* Assets.xcassets */,
 				E052AD391DC91F4900841760 /* Info.plist */,
 				E0AD4D1E1DCAA7970054F47C /* GoogleService-Info.plist */,
@@ -164,10 +162,55 @@
 		E0AD4D371DCACF730054F47C /* TicTacToeGameDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
+				E0AD4D461DCAD33B0054F47C /* GameViewControllerTests.swift */,
 				E0AD4D381DCACF730054F47C /* TicTacToeGameDemoUITests.swift */,
 				E0AD4D3A1DCACF730054F47C /* Info.plist */,
 			);
 			path = TicTacToeGameDemoUITests;
+			sourceTree = "<group>";
+		};
+		E0AD4D401DCACFE40054F47C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E052AD361DC91F4900841760 /* LaunchScreen.storyboard */,
+				E052AD311DC91F4900841760 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E0AD4D421DCAD0200054F47C /* Sks */ = {
+			isa = PBXGroup;
+			children = (
+				E052AD291DC91F4900841760 /* GameScene.sks */,
+				E0AD4D221DCAC01E0054F47C /* PlayerChoiceScene.sks */,
+			);
+			name = Sks;
+			sourceTree = "<group>";
+		};
+		E0AD4D431DCAD0520054F47C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E052AD2F1DC91F4900841760 /* GameViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E0AD4D441DCAD0640054F47C /* GameScenes */ = {
+			isa = PBXGroup;
+			children = (
+				E052AD2D1DC91F4900841760 /* GameScene.swift */,
+				E0AD4D201DCABF9F0054F47C /* PlayerChoiceScene.swift */,
+			);
+			name = GameScenes;
+			sourceTree = "<group>";
+		};
+		E0AD4D451DCAD0870054F47C /* GameLogic */ = {
+			isa = PBXGroup;
+			children = (
+				E052AD431DC923F300841760 /* GameStates.swift */,
+				E052AD411DC923D900841760 /* GameAILogic.swift */,
+			);
+			name = GameLogic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0AD4D471DCAD33B0054F47C /* GameViewControllerTests.swift in Sources */,
 				E0AD4D391DCACF730054F47C /* TicTacToeGameDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +563,7 @@
 			baseConfigurationReference = D774DDA2F81B1F6E3C8D485C /* Pods-TicTacToeGameDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P9B3733Z2X;
 				INFOPLIST_FILE = TicTacToeGameDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
@@ -534,6 +579,7 @@
 			baseConfigurationReference = 0E9188B6D77FFD8CD8CC4DAD /* Pods-TicTacToeGameDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P9B3733Z2X;
 				INFOPLIST_FILE = TicTacToeGameDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;

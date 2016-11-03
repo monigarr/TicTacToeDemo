@@ -2,7 +2,8 @@
 iOS Swift experiments
 
 # SetUp #
-CocoaPods are used in this project. 
+CocoaPods are used in this project: 
+- Firebase for Admob Integration
 - Run this command in terminal: pod install
 - Open TicTacToeGameDemo.xcworkspace in XCode  (NOT .xcodeproj)
 
