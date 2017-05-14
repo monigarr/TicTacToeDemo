@@ -1,11 +1,13 @@
+
 # TicTacToeDemo
 iOS Swift experiments
 
 # SetUp #
-CocoaPods are used in this project: 
-- Firebase for Admob Integration
-- Run this command in terminal: pod install
+- command line:  git clone https://github.com/monigarr/TicTacToeDemo
+- command line:  cd  /TicTacToeDemo directory on your local machine
+- command line:  pod install
 - Open TicTacToeGameDemo.xcworkspace in XCode  (NOT .xcodeproj)
+- DO NOT open .xcodeproj in XCode.  Open .xcworkspace with XCode! We are using CocoaPods.
 
 # Game Play Features #
 - Player chooses either X or O for their game mark
@@ -37,14 +39,13 @@ CocoaPods are used in this project:
 - Tracks winner and loser
 - Tracks end game and active game
 
-# Bonus Integrate Ads #
+# Integrate Ads #
 - GameViewController.swift
 - Firebase integration with AdMob shows tiny advertisement on bottom center of screen
 - https://firebase.google.com/docs/admob/ios/quick-start
 
-# Bonus Persist Game State #
+# Persist Game State #
 - GameStates.swift
-
 
 # Game Requirements #
 - Use vendor preferred dev environment (Swift / XCode)
